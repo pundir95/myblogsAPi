@@ -3,7 +3,7 @@ import userSchema from "../models/userModel.js";
 
 export const createBlogsController = async (req, res, next) => {
     try {
-        const { title, description, image } = req.body;
+        const { title, description } = req.body;
         console.log(req.user)
         if (!title || !description || !image) {
 
